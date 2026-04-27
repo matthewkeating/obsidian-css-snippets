@@ -1,0 +1,6 @@
+/* adjustments to pinned docs */
+div.file-explorer-plus.pin-icon {
+	margin-left: -20px;
+	margin-right: 4px;
+	margin-top: -1px;
+}

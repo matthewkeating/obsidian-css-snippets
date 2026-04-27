@@ -1,0 +1,30 @@
+/* Add bottom padding to H1 */
+.cm-s-obsidian div.HyperMD-header-1, .markdown-preview-view h1 {
+	padding-top: .3em !important;
+	padding-bottom: .6em !important;
+}
+
+.cm-s-obsidian div.HyperMD-header-2, .markdown-preview-view h2 {
+	padding-top: .5em !important;
+	padding-bottom: .4em !important;
+}
+
+.cm-s-obsidian div.HyperMD-header-3, .markdown-preview-view h3 {
+	padding-top: .4em !important;
+	padding-bottom: .3em !important;
+}
+
+.cm-s-obsidian div.HyperMD-header-4, .markdown-preview-view h4 {
+	padding-top: .4em !important;
+	padding-bottom: .2em !important;
+}
+
+.cm-s-obsidian div.HyperMD-header-5, .markdown-preview-view h5 {
+	padding-top: .3em !important;
+	padding-bottom: .1em !important;
+}
+
+.cm-s-obsidian div.HyperMD-header-6, .markdown-preview-view h6 {
+	padding-top: .3em !important;
+	padding-bottom: .0em !important;
+}

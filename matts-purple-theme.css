@@ -1,0 +1,279 @@
+/*
+ * Matt's Mac Theme.
+ */
+
+
+/* make the area behind the tabs darker */
+.workspace-tab-header-container {
+	background-color: var(--titlebar-background) !important;
+}
+.theme-dark .workspace-tab-header-container {
+	background-color: var(--color-base-00) !important;
+}
+
+/* change the color of the left and right nav containers */
+.theme-dark .workspace-leaf {
+	background-color: #1E1E1E !important;
+}
+
+/* reposition button above the files/folders in the file explorer */
+.nav-buttons-container {
+	justify-content: left;
+	padding-left: 8px;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+.markdown-source-view,
+.markdown-preview-view,
+.workspace-leaf,
+.document-search-container,
+.suggestion-container /* for the Slash Commander plugin */ {
+  background-color: #F3F3F3 !important;
+}
+
+.workspace-tab-header-container {
+	border-bottom: none !important;
+	background-color: #F3F3F3 !important;
+}
+
+div.workspace-tab-header-container {
+	border-bottom: none !important;
+	background-color: #F3F3F3 !important;
+}
+
+/* for when no files are open */
+div.view-content {
+	background-color: #F3F3F3 !important;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('SFPro.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* change headers sizes and colors */
+body {
+	--file-line-width: 900px;		/* this is not a header property, but a normal text property */
+	--line-height-normal: 1.75;		/* this is not a header property, but a normal text property */
+	--h1-size: 1.625em;
+	--h2-size: 1.375em;
+	--h3-size: 1.25em;
+	--h4-size: 1.125em;
+	--h5-size: 1em;
+	--h6-size: 1em;
+	--h1-weight: 600;
+	--h2-weight: 600;
+    --h3-weight: 500;
+    --h4-weight: 500;
+    --h5-weight: 500;
+	--h6-weight: 400;
+    --h5-variant: small-caps;
+    --h6-variant: small-caps;
+	
+	font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+.cm-header-1 {
+    color: #535353 !important
+}
+.cm-header-2 {
+	color: #8B7AF3 !important;
+}
+.cm-header-3 {
+	color: #AD9DD8 !important;
+}
+.cm-header-4 {
+	color: #C26FD5 !important;
+}
+.cm-header-5 {
+	color: #E49CF5 !important;
+}
+.cm-header-6 {
+	color: #93A0BD !important;
+}
+
+/* change color of bold and italics */
+.cm-strong, .cm-em {
+	color: #A272AD !important;
+}
+
+/* make text color a little dimmer */
+div.cm-line {
+	color: #333333 !important;
+}
+.theme-dark div.cm-line {
+	color: #B3B3B3 !important;
+}
+
+/* remove underline from links */
+.markdown-source-view.mod-cm6 .cm-underline,
+.cm-hmd-internal-link,	/* internal links */
+.cm-url					/* external links */
+{
+	text-decoration-line: none !important;
+}
+
+/* make unresolved links the same color as resolved links */
+.markdown-source-view.mod-cm6 .is-unresolved {
+	opacity: none !important
+}
+
+/* make the code background a little lighter */
+.theme-dark span.cm-inline-code {
+	background-color: #282828 !important;
+}
+
+/* change the look of the callouts (e.g., notes, important, etc.) */
+.theme-dark .callout {
+	border-width: 1.5px !important;
+	border-color: rgba(var(--callout-color), 0.25) !important;
+	background-color: #1E1E1E !important;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+.lucide-pencil,
+.lucide-check-circle-2,
+.lucide-alert-triangle,
+.lucide-zap {
+	stroke: rgba(var(--callout-color), 0.56);
+}
+.callout-title-inner {
+	font-weight: 250 !important;
+	color: rgba(var(--callout-color), 0.56);
+}
+.callout-content {
+	color: #b3b3b3 !important;
+}
+
+/* change the color of the "Note" and "All other" callouts */
+/* note: the B3 at the end of the hex value is 70% opacity */
+div.callout[data-callout="note"],
+div.callout[data-callout="all-other"]
+{
+	border-color: #554C89B3 !important;
+}
+.lucide-pencil {
+	stroke: #554C89;
+}
+div.callout[data-callout="note"] > div.callout-title > div.callout-title-inner,
+div.callout[data-callout="all-other"] > div.callout-title > div.callout-title-inner
+{
+	color: #554C89 !important;
+}
+
+/* change the color of the "Important" and "Tip" callouts */
+/* note: the 80 at the end of the hex value is 50% opacity */
+div.callout[data-callout="important"],
+div.callout[data-callout="tip"]
+{
+	border-color: #C26FD580 !important;
+}
+/* note: the 99 at the end of the hex value is 70% opacity */
+.lucide-flame {
+	stroke: #C26FD599;
+}
+/* note: the 99 at the end of the hex value is 70% opacity */
+div.callout[data-callout="important"] > div.callout-title > div.callout-title-inner,
+div.callout[data-callout="tip"] > div.callout-title > div.callout-title-inner
+{
+	color: #C26FD599 !important;
+}
+
+/* remove the </> that shows up in the gutter when you hover over callouts (e.g., notes, important, etc.) */
+div.edit-block-button {
+	display: none !important;
+}
+
+/* remove the outline that shows up when you hover over callouts (e.g., notes, important, etc.) */
+div.cm-embed-block:hover {
+	box-shadow: none !important;
+}
+
+/* Make the callouts (e.g., notes, important, etc.) a little more visible by increasing the boarder size */
+.callouts-outlined .callout {
+    --callout-border-width: 2px;
+}
+
+/* Color LaTeX equations */
+mjx-container {
+	color: #4D95F7;
+}
+
+/* Color block ids */
+span.cm-blockid {
+	color: #554C89 !important;
+}
+
+/* dataview tables */
+th {
+	font-weight: 500 !important;
+	text-transform: uppercase;
+	color: #AD9DD8 !important;
+	border-bottom: 2px solid #333645 !important;
+}
+td {
+  border-bottom: 1px solid #333645 !important;
+  color: #b3b3b3 !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  padding-left: 4px !important;
+  padding-right: 4px !important;
+}
+tr:hover td {
+   	background-color: var(--background-secondary) !important;
+}
+
+/* make is so tag padding doesn't overlap when vertically stacked in a narrow table column */
+.tag {
+	padding: 0.1em 0.6em !important;
+}
+
+/* Search results pane */
+/* Make the results text smaller */
+div.search-result-file-match.better-search-views-file-match.markdown-preview-view.markdown-rendered {
+	font-size: small;
+}
+
+/* YAML color formatting */
+/* In dark mode, the default is to color the number and strings (i.e. letter inside single or double quotes).
+This seems weird to me. */
+.theme-dark .cm-number,
+.theme-dark .cm-string {
+    color: #d4d4d4 !important;
+}
+/* In light mode, the default is to not syntax highlight (color yaml). This adds syntax highlighting. */
+.theme-light .cm-atom {
+	color: #CA864E;
+}
+.theme-light .cm-hmd-frontmatter.cm-hmd-frontmatter.cm-def {
+	color: #23AA25;
+}
+
+.dataview .inline-field-key {
+	color: #8B7AF3;
+	font-family: var(--font-text);
+	background-color: none !important;
+}
+
+.dataview .inline-field-value {
+	font-family: var(--font-text);
+	background-color: none;
+}
+
+.cm-s-obsidian span.cm-link:hover {
+	color: #B3B3B3 !important;
+	text-decoration-line: none !important;
+}
+.cm-s-obsidian span.cm-link {
+	color: #B3B3B3 !important;
+	text-decoration-line: none !important;
+}
+
+/* for the pins that are part of the File Explorer++ icons */
+.lucide-pin {
+	stroke: #999999 !important;
+}

@@ -1,0 +1,101 @@
+/*
+ * Matt's Mac Theme.
+ */
+
+
+/* header sizes */
+body {
+	--file-line-width: 900px;		/* this is not a header property, but a normal text property */
+	--line-height-normal: 1.75;		/* this is not a header property, but a normal text property */
+	--h1-size: 1.625em;
+	--h2-size: 1.375em;
+	--h3-size: 1.25em;
+	--h4-size: 1.125em;
+	--h5-size: 1em;
+	--h6-size: 1em;
+	--h1-weight: 600;
+	--h2-weight: 600;
+    --h3-weight: 500;
+    --h4-weight: 500;
+    --h5-weight: 500;
+	--h6-weight: 400;
+    --h5-variant: small-caps;
+    --h6-variant: small-caps;
+}
+
+
+
+hr {
+	border-top: 1px #e1dfe0 solid;
+}
+
+
+/* background color */
+.workspace-leaf,
+.workspace-tab-header-container,
+.document-search-container,			/* for cmd+f */
+.suggestion-container,				/* for the Slash Commander plugin */
+.view-content
+{
+  background-color: #FFFFFF !important;
+}
+
+
+
+/* text color */
+.cm-line {
+	color: black !important;
+}
+
+
+
+/* change color of bold and italics */
+.cm-strong, .cm-em {
+	color: #6d85f2 !important;
+}
+
+
+
+/* header colors */
+.cm-header-1 {
+    color: #b6c2f8 !important
+}
+.cm-header-2 {
+	color: #5264b5 !important;
+}
+.cm-header-3 {
+	color: #5264b5 !important;
+}
+.cm-header-4 {
+	color: #5264b5 !important;
+}
+.cm-header-5 {
+	color: #5264b5 !important;
+}
+.cm-header-6 {
+	color: #5264b5 !important;
+}
+
+
+
+/* remove underline from links */
+.markdown-source-view.mod-cm6 .cm-underline,
+.cm-hmd-internal-link,	/* internal links */
+.cm-url					/* external links */
+{
+	text-decoration-line: none !important;
+}
+
+
+
+/* make unresolved links the same color as resolved links */
+.markdown-source-view.mod-cm6 .is-unresolved {
+	opacity: none !important
+}
+
+
+/* for the "folder" icon */
+svg.svg-icon.right-triangle {
+	stroke: #99aaf7;
+	stroke-width: 3px;
+}
